@@ -1,0 +1,27 @@
+.container{
+ background-color: #1a1a1a;
+ color: white;
+}
+.container ul{
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ 
+}
+.container ul li{
+ list-style: none;
+ padding: 8px;
+}
+.container ul li:first-child{
+ display: flex;
+ gap: 2px;
+ align-items: center;
+}
+.container ul li:hover{
+ border: 2px solid white;
+}
+@media screen  and (max-width:576px){
+ .container ul li :not(:first-child){
+display: none;
+ }
+}

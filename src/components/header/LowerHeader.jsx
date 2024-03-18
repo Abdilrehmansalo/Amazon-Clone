@@ -1,0 +1,21 @@
+import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
+import classes from "./lowerheader.module.css"
+
+const LowerHeader = () => {
+  return (
+    <div className={classes.container}>
+      <ul>
+        <AiOutlineMenu />
+        <li>All</li>
+        <li>Today's Deals</li>
+        <li>Costumer Services</li>
+        <li>Registry</li>
+        <li>Gift Cards</li>
+        <li>Sell</li>
+      </ul>
+    </div>
+  );
+};
+
+export default LowerHeader;
