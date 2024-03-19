@@ -6,20 +6,19 @@ import classes from "./carousel.module.css"
 
 const CarouselEffects = () => {
   return (
-    <>
+    <div>
       <Carousel
         autoPlay={true}
         infiniteLoop={true}
         showIndicators={false}
         showThumbs={false}
-        verticalSwipe='standard'
       >
-        {img.map((imglink, index) => {
-          return <img src={imglink} key={index} />;
+        {img?.map((imglink,index) => {
+          return <img src={imglink} key={index}/>;
         })}
       </Carousel>
       <div className={classes.hero__img}></div>
-    </>
+    </div>
   );
 }
 

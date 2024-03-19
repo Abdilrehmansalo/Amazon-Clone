@@ -1,6 +1,7 @@
 .container{
  background-color: #1a1a1a;
  color: white;
+ 
 }
 .container ul{
  display: flex;
